@@ -49,9 +49,8 @@ console.log(lastElement([1, 2, 4, "dog", true]))
  * Give an array, return the sum of every element
  * 
  * arrsum([2,2,2]) -> 6
- */
-
-function arrReturn(array) {
+ * 
+ * function arrReturn(array) {
     let sum = 0;
     for (let i = 0; i < array.length; ++i) {
         sum = sum + array[i]
@@ -60,10 +59,29 @@ function arrReturn(array) {
 }
 
 console.log(arrReturn([100, 91315, 1234, 3]))
-
-
-/**
+ * 
  * for loop explanation: starting at 0, while I is less than 0 we want to run
  * this code. We are also incrementing it each time until I stops being less
  * than 0.
  */
+
+////////////////////////////////////////////////
+
+/**
+ * Question 5: 
+ * Add up the numbers from a single number
+ * EG. An input of 4 will give you 1+2+3+4, which equals to 10.
+ * 
+ * progressiveSum(3) -> 6
+ * progressiveSum(4) -> 10
+ */
+
+function proressiveSum(num) {
+ let sum = 0;
+ for (let i = 1; i <= num; ++i) { //we add an = because we are starting from 1 which  means we are adding an extra iteration. so therefore we must put = so it doesnt get added
+    sum = sum + i;
+  }
+return sum
+}
+
+console.log(proressiveSum(4))
