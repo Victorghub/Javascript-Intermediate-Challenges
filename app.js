@@ -51,16 +51,15 @@ console.log(lastElement([1, 2, 4, "dog", true]))
  * arrsum([2,2,2]) -> 6
  */
 
-function arrSum(num1) {
-    let sum = 0; //create a variable
- for (let i = 0; i < num1.length; ++i) { //loops over every element in the array
-    sum = sum + num1[i]; //every iteration we want to add every current element we are on to the array
+function arrReturn(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; ++i) {
+        sum = sum + array[i]
     }
-    return sum;
+    return sum
 }
 
-console.log(arrSum([1, 500, 4]));
-
+console.log(arrReturn([100, 91315, 1234, 3]))
 
 
 /**
