@@ -92,9 +92,7 @@ console.log(proressiveSum(4))
  * given a number in seconds, return this number in MM:SS Format.
  * calcTime(66) -> '01:06'
  * 
- *  */
-
-function calcTime(seconds) {
+ * function calcTime(seconds) {
     let timerMinutes = Math.floor(seconds / 60); // thiis gives the minutes
     let timerSeconds = seconds % 60; // this gives the seconds that are left - 6 left
 
@@ -107,3 +105,23 @@ function calcTime(seconds) {
 }
 
 console.log(calcTime(100))
+ * 
+ *  */
+
+/**
+ * Question 7:
+ * Find the largets numbers, return the largest number of that array
+ * getMax([5,100,0])
+ */
+
+function getMax(arr) {
+    let max = arr[0];
+for (let i = 0; i < arr.length; ++i) {
+    if (arr[i] > max) {
+        max =  arr[i]
+    }
+}
+return max;
+}
+
+console.log(getMax([1, 1500, 500]));
