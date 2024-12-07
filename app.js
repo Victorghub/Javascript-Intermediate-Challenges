@@ -97,7 +97,13 @@ console.log(proressiveSum(4))
 function calcTime(seconds) {
     let timerMinutes = Math.floor(seconds / 60); // thiis gives the minutes
     let timerSeconds = seconds % 60; // this gives the seconds that are left - 6 left
+
+    if (timerMinutes.toString().length === 1) {
+        timerMinutes = '0' + timerMinutes
+    }
+
     return timerMinutes + ':' + timerSeconds;
+
 }
 
 console.log(calcTime(100))
