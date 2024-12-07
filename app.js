@@ -114,17 +114,17 @@ console.log(calcTime(100))
  * getMax([5,100,0])
  */
 
-function getMax(arr) {
-    let max = arr[0];
-for (let i = 0; i < arr.length; ++i) {
-    if (arr[i] > max) { // if the current number were on, if its bigger than MAX (WHICH IS WHAT WE STARTED WITH)
-        max =  arr[i] //Then this is our new maximum value
+function getMax(numbers) {
+    let max = 0;
+    for (let i = 0; i < numbers.length; ++i) {
+        if (numbers[i] > max) {
+            max = numbers[i] + max
+        }
     }
-}
-return max;
+    return max
 }
 
-console.log(getMax([1, 1500, 500]));
+console.log(getMax([5000, 40, 300]))
 
 // let max = array at 0. - so max is currently one
 // if arr[i] is a bigger  number than the current maximum value that we are storing, let the new maximum value be the current itiration we are on
