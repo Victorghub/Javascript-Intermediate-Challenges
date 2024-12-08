@@ -128,3 +128,4 @@ console.log(getMax([5000, 40, 300]))
 
 // let max = array at 0. - so max is currently one
 // if arr[i] is a bigger  number than the current maximum value that we are storing, let the new maximum value be the current itiration we are on
+//
