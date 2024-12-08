@@ -112,20 +112,30 @@ console.log(calcTime(100))
  * Question 7:
  * Find the largets numbers, return the largest number of that array
  * getMax([5,100,0])
- */
-
-function getMax(numbers) {
-    let max = 0;
-    for (let i = 0; i < numbers.length; ++i) {
-        if (numbers[i] > max) {
-            max = numbers[i] + max
-        }
-    }
-    return max
-}
-
-console.log(getMax([5000, 40, 300]))
-
+ * 
 // let max = array at 0. - so max is currently one
 // if arr[i] is a bigger  number than the current maximum value that we are storing, let the new maximum value be the current itiration we are on
 //
+ * 
+ */
+
+
+/**
+ * Given a string, return the reversed string
+ * reversestring(abc) -> cba
+ * 
+ * use a incrementing for loop
+ * use a decrementing for loop
+ * or 
+ * use the array reverse property
+ */
+
+function reverseString(string) {
+    let reversedString = '';
+    for (let i = 0; i < string.length; ++i) {
+        reversedString = string[i] + reversedString;
+    }
+    return reversedString;
+}
+
+console.log(reverseString("abc"));
